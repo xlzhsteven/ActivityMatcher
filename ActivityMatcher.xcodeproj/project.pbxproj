@@ -15,6 +15,8 @@
 		CED83ECF1C1D4681001585E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED83ECD1C1D4681001585E6 /* LaunchScreen.storyboard */; };
 		CED83EDA1C1D4681001585E6 /* ActivityMatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CED83ED91C1D4681001585E6 /* ActivityMatcherTests.m */; };
 		CED83EE51C1D4681001585E6 /* ActivityMatcherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CED83EE41C1D4681001585E6 /* ActivityMatcherUITests.m */; };
+		CED83EF31C1D4731001585E6 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED83EF21C1D4731001585E6 /* FBSDKCoreKit.framework */; };
+		CED83EF81C1D494A001585E6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED83EF71C1D494A001585E6 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		CED83EE01C1D4681001585E6 /* ActivityMatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityMatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED83EE41C1D4681001585E6 /* ActivityMatcherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityMatcherUITests.m; sourceTree = "<group>"; };
 		CED83EE61C1D4681001585E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED83EF21C1D4731001585E6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-20151111/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		CED83EF71C1D494A001585E6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-20151111/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED83EF31C1D4731001585E6 /* FBSDKCoreKit.framework in Frameworks */,
+				CED83EF81C1D494A001585E6 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				CED83ED81C1D4681001585E6 /* ActivityMatcherTests */,
 				CED83EE31C1D4681001585E6 /* ActivityMatcherUITests */,
 				CED83EBD1C1D4681001585E6 /* Products */,
+				CED83EF41C1D4736001585E6 /* FrameWorks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +145,15 @@
 				CED83EE61C1D4681001585E6 /* Info.plist */,
 			);
 			path = ActivityMatcherUITests;
+			sourceTree = "<group>";
+		};
+		CED83EF41C1D4736001585E6 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				CED83EF71C1D494A001585E6 /* FBSDKLoginKit.framework */,
+				CED83EF21C1D4731001585E6 /* FBSDKCoreKit.framework */,
+			);
+			name = FrameWorks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "/Users/Xiaolong/Downloads/FacebookSDKs-iOS-20151111";
 				INFOPLIST_FILE = ActivityMatcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaolozhang.ActivityMatcher;
@@ -425,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "/Users/Xiaolong/Downloads/FacebookSDKs-iOS-20151111";
 				INFOPLIST_FILE = ActivityMatcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaolozhang.ActivityMatcher;
